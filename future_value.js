@@ -28,7 +28,17 @@ var calculate_click = function () {
 	} 
 }
 
+var clear_click = function () {
+
+	$("investment").value = "";
+	$("years").value = "";
+	$("futureValue").value = "";
+	$("annualRate").value = 0;
+	
+}
+
 window.onload = function () {
     $("calculate").onclick = calculate_click;
+    $("clear").onclick = clear_click;
     $("investment").focus();
 }
